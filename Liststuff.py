@@ -14,8 +14,8 @@ def candy_values():
 
 
 candy_values()
-print(f"Here is the past 6 months sales of candy{candy}.")
-
+print(f"Here is the past 6 months sales of candy{candy}.")  # give some space between the word 'candy' and the variable {candy}
+#  you could have added Line 17 or 28 (here is the ... sales) to the definition loop, since it happens multiple times
 
 def cookie_values():
     print("Type in the last 6 months of sales for cookies separately")
@@ -27,14 +27,15 @@ def cookie_values():
 cookie_values()
 print(f"Here is the past 6 months sales of cookies{cookies}.")
 print("Now its time to average both the cookies and the candy")
-
+#  I noticed you executed your functions (cookie_values()) etc... directly after your defintions, 
+#  you could have a section specifically for definitions, and another for code execution.
 
 def average_candy():
     print("Here is the average sales per month for candy:")
     added_candy = int(candy[0] + candy[1] + candy[2] + candy[3] + candy[4] + candy[5])
     avg_candy = (int(added_candy) / 6)
     print(avg_candy)
-
+#  no return statement? probably not needed anyway
 
 average_candy()
 
@@ -81,3 +82,4 @@ elif cookies > candy:
     print("Cookies are more popular than candy")
 elif cookies == candy:
     print("Cookies and candy are equally popular")
+#  good shit mike
